@@ -6,8 +6,8 @@ export const bedrockChatParams = new Map<string, BedrockChatParametersInput>();
 
 // If you define "default" environment here, parameters in cdk.json are ignored
 bedrockChatParams.set("prod", {
-  envName: "bedrockv3-poc",                    // Set explicit environment name
-  envPrefix: "bedrockv3-poc",                  // Set explicit environment prefix
+  envName: "prod",                    // Set explicit environment name
+  envPrefix: "prod",                  // Set explicit environment prefix
   bedrockRegion: "us-east-1",                  // Or your desired region for this POC
   userPoolDomainPrefix: "kemper-bedrockv3-poc", // VALID: Globally unique Cognito prefix
   allowedSignUpEmailDomains: ["kemper.com"],   // VALID: Restrict sign-ups to kemper.com emails
